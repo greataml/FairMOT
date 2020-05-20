@@ -1,13 +1,9 @@
 {
-    "root":"/data/yfzhang/MOT/JDE",
+    "root":"/media/hyd/PanF1/track/FairMOT/data",
     "train":
     {
-        "mot17":"./data/mot17.train",
-        "caltech":"./data/caltech.train",
-        "citypersons":"./data/citypersons.train",
-        "cuhksysu":"./data/cuhksysu.train",
-        "prw":"./data/prw.train",
-        "eth":"./data/eth.train"
+        "mot15":"./data/mot15.train"
+        
     },
     "test_emb":
     {
