@@ -73,7 +73,7 @@ class opts(object):
                              help='learning rate for batch size 32.')
     self.parser.add_argument('--lr_step', type=str, default='20,27',
                              help='drop learning rate by 10.')
-    self.parser.add_argument('--num_epochs', type=int, default=30,
+    self.parser.add_argument('--num_epochs', type=int, default=300,
                              help='total training epochs.')
     self.parser.add_argument('--batch_size', type=int, default=12,
                              help='batch size')
@@ -81,7 +81,7 @@ class opts(object):
                              help='batch size on the master gpu.')
     self.parser.add_argument('--num_iters', type=int, default=-1,
                              help='default: #samples / batch_size.')
-    self.parser.add_argument('--val_intervals', type=int, default=5,
+    self.parser.add_argument('--val_intervals', type=int, default=30,
                              help='number of epochs to run validation.')
     self.parser.add_argument('--trainval', action='store_true',
                              help='include validation in training and '
@@ -118,7 +118,7 @@ class opts(object):
 
     # mot
     self.parser.add_argument('--data_cfg', type=str,
-                             default='../src/lib/cfg/data.json',
+                             default='../src/lib/cfg/custom.json',
                              help='load data from cfg')
     self.parser.add_argument('--data_dir', type=str, default='/media/hyd/PanF1/track/FairMOT/data')
 
