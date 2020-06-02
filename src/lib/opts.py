@@ -118,7 +118,7 @@ class opts(object):
 
     # mot
     self.parser.add_argument('--data_cfg', type=str,
-                             default='../src/lib/cfg/custom.json',
+                             default='../src/lib/cfg/custom_jc.json',
                              help='load data from cfg')
     self.parser.add_argument('--data_dir', type=str, default='/media/hyd/PanF1/track/FairMOT/data')
 
